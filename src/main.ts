@@ -3,11 +3,11 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import NavBottom from '@/components/NavBottom.vue'
+import LayoutPage from '@/components/LayoutPage.vue'
 
 Vue.config.productionTip = false
 
-Vue.component('NavBottom', NavBottom)
+Vue.component('LayoutPage', LayoutPage)
 
 new Vue({
   router,

@@ -1,9 +1,7 @@
 <template>
-  <div class="label">
+  <layout-page>
     标签
-    <hr>
-    <nav-bottom></nav-bottom>
-  </div>
+  </layout-page>
 </template>
 
 <script>

@@ -1,9 +1,7 @@
 <template>
-  <div class="statistic">
+  <layout-page>
     统计
-    <hr>
-    <nav-bottom></nav-bottom>
-  </div>
+  </layout-page>
 </template>
 
 <script>
