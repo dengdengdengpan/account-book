@@ -1,12 +1,17 @@
 <template>
   <div class="money">
     记账
+    <hr>
+    <nav-bottom></nav-bottom>
   </div>
 </template>
 
-<script lang="ts">
+<script>
+import NavBottom from '@/components/NavBottom.vue'
+
 export default {
-  name: 'Money'
+  name: 'Money',
+  components: { NavBottom }
 }
 </script>
 

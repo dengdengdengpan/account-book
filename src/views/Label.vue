@@ -1,10 +1,17 @@
 <template>
-  <div class="label">标签</div>
+  <div class="label">
+    标签
+    <hr>
+    <nav-bottom></nav-bottom>
+  </div>
 </template>
 
-<script lang="ts">
+<script>
+import NavBottom from '@/components/NavBottom.vue'
+
 export default {
-  name: 'Label'
+  name: 'Label',
+  components: { NavBottom }
 }
 </script>
 
