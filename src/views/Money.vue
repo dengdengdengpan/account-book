@@ -7,11 +7,8 @@
 </template>
 
 <script>
-import NavBottom from '@/components/NavBottom.vue'
-
 export default {
-  name: 'Money',
-  components: { NavBottom }
+  name: 'Money'
 }
 </script>
 

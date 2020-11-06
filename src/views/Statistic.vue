@@ -7,11 +7,8 @@
 </template>
 
 <script>
-import NavBottom from '@/components/NavBottom.vue'
-
 export default {
-  name: 'Statistic',
-  components: { NavBottom }
+  name: 'Statistic'
 }
 </script>
 
