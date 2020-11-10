@@ -25,7 +25,7 @@ export default {
 
   .slot-wrapper {
     flex-grow: 1;
-    overflow: auto;
+    overflow: hidden scroll;
     background-color: skyblue;
   }
 }

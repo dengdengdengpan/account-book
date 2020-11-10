@@ -1,7 +1,7 @@
 <template>
-  <layout-page>
+  <layout>
     标签
-  </layout-page>
+  </layout>
 </template>
 
 <script>

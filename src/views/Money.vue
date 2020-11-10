@@ -1,5 +1,5 @@
 <template>
-  <layout-page>
+  <layout>
     <p>记账</p>
     <p>记账</p>
     <p>记账</p>
@@ -100,7 +100,7 @@
     <p>记账</p>
     <p>记账</p>
     <p>记账</p>
-  </layout-page>
+  </layout>
 </template>
 
 <script>

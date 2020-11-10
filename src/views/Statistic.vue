@@ -1,7 +1,7 @@
 <template>
-  <layout-page>
+  <layout>
     统计
-  </layout-page>
+  </layout>
 </template>
 
 <script>
