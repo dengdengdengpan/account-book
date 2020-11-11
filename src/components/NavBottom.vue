@@ -7,6 +7,9 @@
 </template>
 
 <script lang="ts">
+import detailSvg from '@/icons/detail.svg'
+console.log('detailSvg', detailSvg)
+
 export default {
   name: 'NavBottom'
 }

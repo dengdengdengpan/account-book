@@ -14,9 +14,9 @@ const routes: Array<RouteConfig> = [
     component: () => import('@/views/Label.vue')
   },
   {
-    path: '/money',
-    name: 'money',
-    component: () => import('@/views/Money.vue')
+    path: '/detail',
+    name: 'detail',
+    component: () => import('@/views/Detail.vue')
   },
   {
     path: '/statistic',
