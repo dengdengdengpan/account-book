@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = {
   chainWebpack: config => {
-    const dir = path.resolve(__dirname, 'src/icons')
+    const dir = path.resolve(__dirname, 'src/icons/svg')
     config.module
       .rule('svg-sprite')
       .test(/\.svg$/)
