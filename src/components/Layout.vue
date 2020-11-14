@@ -21,12 +21,10 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: orange;
 
   .slot-wrapper {
     flex-grow: 1;
     overflow: hidden scroll;
-    background-color: skyblue;
   }
 }
 </style>

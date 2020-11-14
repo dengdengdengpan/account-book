@@ -1,14 +1,14 @@
 <template>
   <nav class="nav-bottom">
-    <router-link to="/label" class="nav-item">
+    <router-link to="/label" active-class="nav-selected" class="nav-item">
       <svg-icon icon-name="label" class="nav-icon"></svg-icon>
       <span class="nav-name">标签</span>
     </router-link>
-    <router-link to="/detail" class="nav-item">
+    <router-link to="/detail" active-class="nav-selected" class="nav-item">
       <svg-icon icon-name="detail" class="nav-icon"></svg-icon>
       <span class="nav-name">明细</span>     
     </router-link>
-    <router-link to="/statistic" class="nav-item">
+    <router-link to="/statistic" active-class="nav-selected" class="nav-item">
       <svg-icon icon-name="statistic" class="nav-icon"></svg-icon>
       <span class="nav-name">统计</span>
     </router-link>
@@ -35,6 +35,10 @@ export default {
     align-items: center;
     padding-top: 3px;
     padding-bottom: 3px;
+
+    &.nav-selected {
+      color: red;
+    }
 
     .nav-icon {
       width: 32px;
