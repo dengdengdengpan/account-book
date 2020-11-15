@@ -47,7 +47,7 @@ export default {
 
     .nav-name {
       font-size: 12px;
-      line-height: 1.5;
+      // line-height: 1.5;
     }
   }
 }
