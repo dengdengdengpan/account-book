@@ -1,7 +1,7 @@
 <template>
-  <layout>
+  <layout class-prefix="account">
     <div class="account-wrapper">
-      <div class="account-container">
+      <div class="account-content">
         <div class="type">记账类型</div>
         <div class="money">记账金额</div>
         <ul class="label-list">记账标签列表</ul>
@@ -12,22 +12,25 @@
   </layout>
 </template>
 
-<script lang="ts">
+
+<script>
 export default {
   name: 'Detail'
 }
 </script>
 
-<style lang="scss" scoped>
-.account-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  background-color: rgba(105, 106, 107, .2);
-
-  .account-container {
-    background-color: pink;
-  }
+<style scoped>
+.account-layout >>> .account-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 100;
 }
+</style>
+
+<style lang="scss" scoped>
+
 </style>

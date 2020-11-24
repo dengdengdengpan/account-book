@@ -1,6 +1,6 @@
 <template>
-  <div class="layout">
-    <div class="slot-wrapper">
+  <div class="layout" :class="classPrefix && `${classPrefix}-layout`">
+    <div class="slot-wrapper" :class="classPrefix && `${classPrefix}-slot-wrapper`">
       <slot></slot>
     </div>
     <nav-bottom></nav-bottom>
@@ -12,7 +12,13 @@ import NavBottom from '@/components/NavBottom.vue'
 
 export default {
   name: 'Layout',
-  components: { NavBottom }
+  components: { NavBottom },
+  props: {
+    classPrefix: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 
