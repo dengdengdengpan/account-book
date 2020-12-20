@@ -1,26 +1,28 @@
 <template>
   <nav class="nav-bottom">
-    <router-link to="/label" active-class="nav-selected" class="nav-item">
-      <svg-icon icon-name="label" class="nav-icon"></svg-icon>
-      <span class="nav-name">标签</span>
-    </router-link>
-    <router-link to="/detail" active-class="nav-selected" class="nav-item">
+    <router-link to="/keep-accounts" active-class="nav-selected" class="nav-item">
       <svg-icon icon-name="detail" class="nav-icon"></svg-icon>
-      <span class="nav-name">明细</span>     
+      <span class="nav-name">记账</span>     
     </router-link>
     <router-link to="/statistic" active-class="nav-selected" class="nav-item">
       <svg-icon icon-name="statistic" class="nav-icon"></svg-icon>
       <span class="nav-name">统计</span>
     </router-link>
+    <router-link to="/label" active-class="nav-selected" class="nav-item">
+      <svg-icon icon-name="label" class="nav-icon"></svg-icon>
+      <span class="nav-name">资产</span>
+    </router-link>
   </nav>
 </template>
 
 <script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
 import SvgIcon from './SvgIcon.vue'
-export default {
-  components: { SvgIcon },
-  name: 'NavBottom'
-}
+
+@Component({
+  components: { SvgIcon }
+})
+export default class NavBottom extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -47,7 +49,7 @@ export default {
 
     .nav-name {
       font-size: 12px;
-      // line-height: 1.5;
+      line-height: 1.5;
     }
   }
 }
