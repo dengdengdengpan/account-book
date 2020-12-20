@@ -7,18 +7,15 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator'
 import NavBottom from '@/components/NavBottom.vue'
 
-export default {
-  name: 'Layout',
-  components: { NavBottom },
-  props: {
-    classPrefix: {
-      type: String,
-      default: ''
-    }
-  }
+@Component({
+  components: { NavBottom }
+})
+export default class Layout extends Vue {
+  @Prop(String) classPrefix!: string
 }
 </script>
 
