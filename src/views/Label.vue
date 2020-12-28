@@ -1,7 +1,5 @@
 <template>
-  <layout>
-    标签
-  </layout>
+  <div>标签</div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout layout-title="统计">
     统计
   </layout>
 </template>

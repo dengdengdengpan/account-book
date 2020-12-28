@@ -1,9 +1,12 @@
 <template>
-  <div>资产</div>
+  <layout layout-title="资产">资产</layout>
 </template>
 
-<script>
-export default {
-  name: 'Wealth'
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+
+@Component
+export default class Wealth extends Vue {
+  //
 }
 </script>

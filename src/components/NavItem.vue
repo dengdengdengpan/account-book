@@ -17,16 +17,18 @@ export default class NavItem extends Vue {
 </script>
 
 <style lang="scss" scoped>
+@import '~@/styles/variable.scss';
+
 .nav-item {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 3px;
 
   &.nav-selected {
-    color: red;
+    color: $color-highlight;
   }
 
   .nav-icon {
