@@ -1,6 +1,6 @@
 <template>
   <header :style="{ backgroundImage: `url(${bgImage})` }">
-    <h3 v-if="title" class="header-title">{{ title }}</h3>
+    <title-item v-if="title" :title="title" class="header-title"></title-item>
     <div v-else>
       <button>按月统计</button>
       <button>2020-12</button>
@@ -16,9 +16,12 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
+import TitleItem from './TitelItem.vue'
 
-@Component
-export default class HeaderBar extends Vue {
+@Component({
+  components: { TitleItem }
+})
+export default class HeaderPanel extends Vue {
   @Prop(String) bgImage!: string
   @Prop({ type: String, required: true }) title!: string
   @Prop({ type: Array,  required: true,  default () { return [] }}) itemList!: Array<object>
@@ -32,23 +35,20 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: $spacing;
-  padding: 8px 12px;
+  padding: $padding;
   border-radius: $border-radius;
-  background: #fff center/contain no-repeat;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  background: center/contain no-repeat #fff;
+  box-shadow: $box-shadow;
 
   .header-title {
-    margin-bottom: $spacing;
-    font-size: 20px;
-    line-height: 1;
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 4px;
-      height: 1em;
-      margin-right: 5px;
-      background-color: $color-highlight;
-      vertical-align: top;
+    margin-bottom: $spacing-larger;
+
+    ::v-deep .title {
+      font-size: 20px;
+
+      &::before {
+        background-color: $color-highlight;
+      }
     }
   }
 

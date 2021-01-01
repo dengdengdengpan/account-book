@@ -1,5 +1,5 @@
 <template>
-  <layout layout-title="资产">资产</layout>
+  <layout-base layout-title="资产">资产</layout-base>
 </template>
 
 <script lang="ts">

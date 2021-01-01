@@ -4,11 +4,11 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import './icons/index.ts'
-import Layout from '@/components/Layout.vue'
+import LayoutBase from '@/components/LayoutBase.vue'
 
 Vue.config.productionTip = false
 
-Vue.component('Layout', Layout)
+Vue.component('layout-base', LayoutBase)
 
 new Vue({
   router,

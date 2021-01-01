@@ -1,7 +1,7 @@
 <template>
-  <layout layout-title="统计">
+  <layout-base layout-title="统计">
     统计
-  </layout>
+  </layout-base>
 </template>
 
 <script>
