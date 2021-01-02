@@ -17,13 +17,10 @@ export default class NavItem extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/styles/variable.scss';
-
 .nav-item {
+  @extend %flex-center-vertical;
   flex-grow: 1;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 5px;
   padding-bottom: 3px;
 
@@ -37,8 +34,7 @@ export default class NavItem extends Vue {
   }
 
   .nav-name {
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: $font-size-mini;
   }
 }
 </style>

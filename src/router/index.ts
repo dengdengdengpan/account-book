@@ -4,11 +4,10 @@ import VueRouter, { RouteConfig } from 'vue-router'
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
-  { path: '/', redirect: '/keep-accounts' },
-  { path: '/keep-accounts', name: 'keep-accounts', component: () => import('@/views/KeepAccounts.vue') },
+  { path: '/', redirect: '/account-overview' },
+  { path: '/account-overview', name: 'account', component: () => import('@/views/AccountOverview.vue') },
   { path: '/statistic', name: 'statistic', component: () => import('@/views/Statistic.vue') },
   { path: '/wealth', name: 'label', component: () => import('@/views/Wealth.vue') },
-  { path: '/add', name: 'add', component: () => import('@/components/LayoutPage/LayoutAdd.vue') },
   { path: '*', component: () => import('@/views/NotFound.vue') }
 ]
 

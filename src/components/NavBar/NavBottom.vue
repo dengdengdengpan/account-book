@@ -23,7 +23,7 @@ const createNavItem = (to: string, icon: string, name: string) => {
 })
 export default class NavBottom extends Vue {
   navList = [
-    createNavItem('keep-accounts', 'keep-accounts', '记账'),
+    createNavItem('account-overview', 'account', '记账'),
     createNavItem('statistic', 'statistic', '统计'),
     createNavItem('wealth', 'wealth', '资产'),
   ]
@@ -33,6 +33,6 @@ export default class NavBottom extends Vue {
 <style lang="scss" scoped>
 .nav-bottom {
   display: flex;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -4px 12px -12px rgba(0, 0, 0, .1);
 }
 </style>

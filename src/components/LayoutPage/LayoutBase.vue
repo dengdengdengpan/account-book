@@ -2,7 +2,7 @@
   <div class="layout-base" :class="classPrefix && `${classPrefix}-layout`">
     <div class="content">
       <div class="header-wrapper">
-        <h1 class="layout-title">{{ layoutTitle }}</h1>
+        <title-top :title="layoutTitle" class="layout-title"></title-top>
         <header-panel v-bind="$attrs"></header-panel>
       </div>
       <div class="slot-wrapper" :class="classPrefix && `${classPrefix}-slot-wrapper`">
@@ -15,11 +15,12 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
+import TitleTop from '@/components/TitleBar/TitleTop.vue'
 import HeaderPanel from './HeaderPanel.vue'
 import NavBottom from '@/components/NavBar/NavBottom.vue'
 
 @Component({
-  components: { HeaderPanel, NavBottom }
+  components: { TitleTop, HeaderPanel, NavBottom }
 })
 export default class Layout extends Vue {
   @Prop(String) classPrefix!: string
@@ -28,8 +29,6 @@ export default class Layout extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/styles/variable.scss';
-
 .layout-base {
   display: flex;
   flex-direction: column;
@@ -45,11 +44,10 @@ export default class Layout extends Vue {
     .header-wrapper {
       position: sticky;
       top: 0;
-    }
 
-    .layout-title {
-      margin-bottom: 10px;
-      font-size: 24px;
+      .layout-title {
+        margin-bottom: 10px;
+      }
     }
   }
 }

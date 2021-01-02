@@ -29,8 +29,6 @@ export default class HeaderPanel extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/styles/variable.scss';
-
 header {
   display: flex;
   flex-direction: column;
@@ -44,7 +42,7 @@ header {
     margin-bottom: $spacing-larger;
 
     ::v-deep .title {
-      font-size: 20px;
+      font-size: $font-size-large;
 
       &::before {
         background-color: $color-highlight;
@@ -59,7 +57,7 @@ header {
     .header-item {
       flex-basis: 50%;
       margin-bottom: 10px;
-      font-size: 14px;
+      font-size: $font-size-small;
       font-weight: $font-weight-medium;
 
       &:first-child {
@@ -70,7 +68,7 @@ header {
 
       &:nth-child(-n + 2) {
         .item-value {
-          font-size: 18px;
+          font-size: $font-size-medium;
         }
       }
 

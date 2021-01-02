@@ -14,12 +14,8 @@ export default class IconButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/styles/variable.scss';
-
 .icon-button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   width: 3em;
   height: 3em;
   border-radius: 50%;

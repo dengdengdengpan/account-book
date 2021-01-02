@@ -11,7 +11,7 @@
     <p>测试测试</p>
     <p>测试测试</p>
     <p>测试测试</p>
-    <p>测试测试</p>
+    <button>测试测试</button>
     <icon-button @xxx="xxx"></icon-button>
   </layout-base>
 </template>
@@ -25,7 +25,7 @@ import IconButton from '@/components/IconSvg/IconButton.vue'
 @Component({
   components: { IconButton }
 })
-export default class KeepAccounts extends Vue {
+export default class AccountOverview extends Vue {
   headerItemList = [
     { label: '支出', value: '4450145287258' },
     { label: '收入', value: '4054210' },
@@ -33,7 +33,7 @@ export default class KeepAccounts extends Vue {
   ]
   headerBgAccount = headerBgAccount
   xxx () {
-    this.$router.push('/add')
+    //
   }
 }
 </script>

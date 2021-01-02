@@ -14,5 +14,12 @@ module.exports = {
       .use('svgo-loader').loader('svgo-loader').options({ externalConfig: svgoConfig }).end()
     config.plugin('svg-sprite').use('svg-sprite-loader/plugin', [{ plainSprite: true }])
     config.module.rule('svg').exclude.add(dir)  
+  },
+  css: {
+    loaderOptions: {
+      scss: {
+        prependData: '@import "~@/styles/variable.scss";'
+      }
+    }
   }
 }

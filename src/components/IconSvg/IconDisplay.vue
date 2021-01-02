@@ -12,12 +12,8 @@ export default class IconDisplay extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import '~@/styles/variable.scss';
-
 .icon-display-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   width: 2em;
   height: 2em;
   border-radius: 50%;

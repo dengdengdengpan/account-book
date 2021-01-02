@@ -1,5 +1,11 @@
 $font-hei: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 $font-weight-medium: 500;
+$font-size-mini: 14px;
+$font-size-small: 14px;
+$font-size: 16px;
+$font-size-medium: 18px;
+$font-size-large: 20px;
+$font-size-larger: 24px;
 $color: #3d4047;
 $color-highlight: #f85080;
 $color-ornament: #bac1c7;
@@ -9,3 +15,14 @@ $spacing: 8px;
 $spacing-larger: 10px;
 $padding: 8px 12px;
 $box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+
+%flex-center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

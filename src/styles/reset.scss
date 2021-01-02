@@ -1,39 +1,50 @@
 @import './variable.scss';
 
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  font-size: 16px;
-  color: $color;
   font-family: $font-hei;
+  font-size: $font-size;
+  color: $color;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1, h3 {
+
+h1, 
+h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 ul {
   margin: 0;
   padding-left: 0;
 }
+
 li {
   list-style-type: none;
 }
+
 p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 button {
   padding: 0;
   border-width: 0;
+  font: inherit;
 
   &:focus {
     outline: none;

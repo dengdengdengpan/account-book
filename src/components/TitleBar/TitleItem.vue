@@ -20,16 +20,12 @@ export default class TitleItem extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/styles/variable.scss';
-
 .title-item {
-  display: flex;
+  @extend %flex-center-vertical;
   justify-content: space-between;
-  align-items: center;
 
   .title {
     flex-shrink: 0;
-    font-size: 16px;
     line-height: 1;
 
     &::before {
@@ -45,10 +41,9 @@ export default class TitleItem extends Vue {
 
   .account-total {
     flex-grow: 1;
-    display: flex;
+    @extend %flex-center-vertical;
     justify-content: flex-end;
-    align-items: center;
-    font-size: 14px;
+    font-size: $font-size-small;
     font-weight: $font-weight-medium;
     line-height: 1;
 
