@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import TitleItem from './TitelItem.vue'
+import TitleItem from '@/components/TitleBar/TitleItem.vue'
 import AccountItem from './AccountItem.vue'
 
 @Component({

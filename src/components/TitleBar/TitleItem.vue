@@ -1,7 +1,7 @@
 <template>
   <div class="title-item">
     <h3 class="title">{{ title }}</h3>
-    <div v-if="income" class="account-total">
+    <div v-if="income || expense" class="account-total">
       <span class="income">+{{ income }}</span>
       <span class="expense">-{{ expense }}</span>
     </div>

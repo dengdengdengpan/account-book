@@ -8,6 +8,7 @@ const routes: Array<RouteConfig> = [
   { path: '/keep-accounts', name: 'keep-accounts', component: () => import('@/views/KeepAccounts.vue') },
   { path: '/statistic', name: 'statistic', component: () => import('@/views/Statistic.vue') },
   { path: '/wealth', name: 'label', component: () => import('@/views/Wealth.vue') },
+  { path: '/add', name: 'add', component: () => import('@/components/LayoutPage/LayoutAdd.vue') },
   { path: '*', component: () => import('@/views/NotFound.vue') }
 ]
 

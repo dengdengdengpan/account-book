@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import TitleItem from './TitelItem.vue'
+import TitleItem from '@/components/TitleBar/TitleItem.vue'
 
 @Component({
   components: { TitleItem }

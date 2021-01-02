@@ -4,7 +4,7 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import './icons/index.ts'
-import LayoutBase from '@/components/LayoutBase.vue'
+import LayoutBase from '@/components/LayoutPage/LayoutBase.vue'
 
 Vue.config.productionTip = false
 

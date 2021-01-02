@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import IconDisplay from './IconDisplay.vue'
+import IconDisplay from '@/components/IconSvg/IconDisplay.vue'
 
 @Component({
   components: { IconDisplay }

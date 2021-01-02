@@ -6,6 +6,13 @@
     :header-bg-image="headerBgAccount"
   >
     <p>测试测试</p>
+    <p>测试测试</p>
+    <p>测试测试</p>
+    <p>测试测试</p>
+    <p>测试测试</p>
+    <p>测试测试</p>
+    <p>测试测试</p>
+    <icon-button @xxx="xxx"></icon-button>
   </layout-base>
 </template>
 
@@ -13,9 +20,10 @@
 import { Vue, Component } from 'vue-property-decorator'
 import headerBgAccount from '@/assets/header-bg-1.png'
 // import AccountList from '@/components/AccountList.vue'
+import IconButton from '@/components/IconSvg/IconButton.vue'
 
 @Component({
-  // components: { AccountList }
+  components: { IconButton }
 })
 export default class KeepAccounts extends Vue {
   headerItemList = [
@@ -24,5 +32,8 @@ export default class KeepAccounts extends Vue {
     { label: '结余', value: '-8014450' }
   ]
   headerBgAccount = headerBgAccount
+  xxx () {
+    this.$router.push('/add')
+  }
 }
 </script>
