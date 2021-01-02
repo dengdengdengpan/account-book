@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/${to}`" active-class="nav-selected" class="nav-item">
-    <svg-icon :icon-name="icon" class="nav-icon"></svg-icon>
+    <icon-svg :icon-name="icon" class="nav-icon"></icon-svg>
     <span class="nav-name">{{ name }}</span>
   </router-link>
 </template>
@@ -32,8 +32,8 @@ export default class NavItem extends Vue {
   }
 
   .nav-icon {
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
   }
 
   .nav-name {

@@ -7,12 +7,12 @@
           <button>收入</button>
         </div>
         <div class="money">
-          <svg-icon icon-name="rmb"></svg-icon>
+          <icon-svg icon-name="rmb"></icon-svg>
           <input type="text">
         </div>
         <ul class="label-list">
           <li class="label-item" v-for="item in labelList" :key="item.icon">
-            <svg-icon class="label-icon" :icon-name="item.icon"></svg-icon>
+            <icon-svg class="label-icon" :icon-name="item.icon"></icon-svg>
             <p class="label-name">{{ item.label }}</p>
           </li>
         </ul>
@@ -22,7 +22,7 @@
           <button>2</button>
           <button>3</button>
           <button class="button-delete">
-            <svg-icon icon-name="delete"></svg-icon>
+            <icon-svg icon-name="delete"></icon-svg>
           </button>
           <button>4</button>
           <button>5</button>
@@ -42,11 +42,11 @@
 
 
 <script>
-import SvgIcon from '@/components/SvgIcon.vue'
+import IconSvg from '@/components/IconSvg.vue'
 
 export default {
   name: 'Detail',
-  components: { SvgIcon },
+  components: { IconSvg },
   data() {
     return {
       labelList: [

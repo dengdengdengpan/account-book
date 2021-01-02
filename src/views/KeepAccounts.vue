@@ -5,17 +5,17 @@
     :header-item-list="headerItemList"
     :header-bg-image="headerBgAccount"
   >
-    <account-list></account-list>
+    <p>测试测试</p>
   </layout-base>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 import headerBgAccount from '@/assets/header-bg-1.png'
-import AccountList from '@/components/AccountList.vue'
+// import AccountList from '@/components/AccountList.vue'
 
 @Component({
-  components: { AccountList }
+  // components: { AccountList }
 })
 export default class KeepAccounts extends Vue {
   headerItemList = [

@@ -33,7 +33,7 @@ export default class TitleItem extends Vue {
     line-height: 1;
 
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 4px;
       height: 1em;

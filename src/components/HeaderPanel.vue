@@ -1,12 +1,12 @@
 <template>
-  <header :style="{ backgroundImage: `url(${bgImage})` }">
-    <title-item v-if="title" :title="title" class="header-title"></title-item>
+  <header :style="{ backgroundImage: `url(${headerBgImage})` }">
+    <title-item v-if="headerTitle" :title="headerTitle" class="header-title"></title-item>
     <div v-else>
       <button>按月统计</button>
       <button>2020-12</button>
     </div>
     <ul class="header-content">
-      <li v-for="item in itemList" :key="item.label" class="header-item">
+      <li v-for="item in headerItemList" :key="item.label" class="header-item">
         <p class="item-label">{{ item.label }}</p>
         <p class="item-value">{{ item.value }}</p>
       </li>
@@ -22,9 +22,9 @@ import TitleItem from './TitelItem.vue'
   components: { TitleItem }
 })
 export default class HeaderPanel extends Vue {
-  @Prop(String) bgImage!: string
-  @Prop({ type: String, required: true }) title!: string
-  @Prop({ type: Array,  required: true,  default () { return [] }}) itemList!: Array<object>
+  @Prop(String) headerBgImage!: string
+  @Prop({ type: String, required: true }) headerTitle!: string
+  @Prop({ type: Array,  required: true,  default () { return [] }}) headerItemList!: Array<object>
 }
 </script>
 

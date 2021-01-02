@@ -13,14 +13,13 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 import NavItem from './NavItem.vue'
-import SvgIcon from './SvgIcon.vue'
 
 const createNavItem = (to: string, icon: string, name: string) => {
   return { to, icon, name }
 }
 
 @Component({
-  components: { SvgIcon, NavItem },
+  components: { NavItem },
 })
 export default class NavBottom extends Vue {
   navList = [
