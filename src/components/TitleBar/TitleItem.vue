@@ -34,7 +34,7 @@ export default class TitleItem extends Vue {
       width: 4px;
       height: 1em;
       margin-right: 5px;
-      background-color: $color-ornament;
+      background-color: $color-light;
       vertical-align: top;
     }
   }

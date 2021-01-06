@@ -34,7 +34,7 @@ export default class LayoutAdd extends Vue {
 <style lang="scss" scoped>
 .layout-add {
   height: 100vh;
-  background-color: $color-light;
+  background-color: $color-lighter;
 
   header {
     padding: 12px $spacing 6px;

@@ -17,7 +17,7 @@ export default class IconDisplay extends Vue {}
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  background-color: $color-light;
+  background-color: $color-lighter;
 
   .icon-display {
     width: 1.5em;

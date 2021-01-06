@@ -56,7 +56,7 @@ export default class AccountItem extends Vue {
       display: block;
       width: 200%;
       height:0;
-      border-top: 1px solid $color-light;
+      border-top: 1px solid $color-lighter;
       position: absolute;
       top: 0;
       transform: scale(0.5);

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-base" :class="classPrefix && `${classPrefix}-layout`">
+  <section class="layout-base" :class="classPrefix && `${classPrefix}-layout`">
     <div class="content">
       <div class="header-wrapper">
         <title-top :title="layoutTitle" class="layout-title"></title-top>
@@ -10,7 +10,7 @@
       </div>
     </div>
     <nav-bottom></nav-bottom>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -39,7 +39,7 @@ export default class Layout extends Vue {
     flex-grow: 1;
     padding: 8px;
     overflow: hidden scroll;
-    background-color: $color-light;
+    background-color: $color-lighter;
 
     .header-wrapper {
       position: sticky;
