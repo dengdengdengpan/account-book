@@ -8,6 +8,7 @@ const routes: Array<RouteConfig> = [
   { path: '/account-overview', name: 'account', component: () => import('@/views/AccountOverview.vue') },
   { path: '/statistic', name: 'statistic', component: () => import('@/views/Statistic.vue') },
   { path: '/wealth', name: 'label', component: () => import('@/views/Wealth.vue') },
+  { path: '/account-add', component: () => import('@/views/AccountAdd.vue') },
   { path: '*', component: () => import('@/views/NotFound.vue') }
 ]
 

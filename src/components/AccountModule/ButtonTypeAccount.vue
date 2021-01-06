@@ -9,9 +9,7 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component
-export default class ButtonAccountType extends Vue {
-  //
-}
+export default class ButtonTypeAccount extends Vue {}
 </script>
 
 <style lang="scss" scoped>

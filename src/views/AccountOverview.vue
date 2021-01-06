@@ -6,11 +6,6 @@
     :header-bg-image="headerBgAccount"
   >
     <p>测试测试</p>
-    <p>测试测试</p>
-    <p>测试测试</p>
-    <p>测试测试</p>
-    <p>测试测试</p>
-    <p>测试测试</p>
     <button>测试测试</button>
     <icon-button @xxx="xxx"></icon-button>
   </layout-base>
@@ -33,7 +28,7 @@ export default class AccountOverview extends Vue {
   ]
   headerBgAccount = headerBgAccount
   xxx () {
-    //
+    this.$router.push({ path: '/account-add' })
   }
 }
 </script>
