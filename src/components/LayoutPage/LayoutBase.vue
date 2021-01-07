@@ -32,12 +32,12 @@ export default class Layout extends Vue {
 .layout-base {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
+  height: 100vh;
 
   .content {
     flex-grow: 1;
-    padding: 8px;
+    padding: $spacing;
     overflow: hidden scroll;
     background-color: $color-lighter;
 

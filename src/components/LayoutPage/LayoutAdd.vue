@@ -1,30 +1,24 @@
 <template>
-  <div class="layout-add">
-    <header>
-      <div class="title-wrapper">
-        <title-top :title="layoutTitle"></title-top>
-        <icon-svg icon-name="close" class="icon-layout-add"></icon-svg>
-      </div>
+  <section class="layout-add">
+    <div class="title-wrapper">
+      <title-close :title="layoutTitle"></title-close>
       <slot name="type"></slot>
-    </header>
-    <main>
-      <slot name="tag"></slot>
-    </main>
-    <footer>
-      <slot name="money"></slot>
-      <slot name="account"></slot>
-      <slot name="numberPad"></slot>
-      <slot name="wealth"></slot>
-    </footer>
-  </div>
+    </div>
+    <div class="content">
+      <slot name="label"></slot>
+    </div>
+    <div class="action-wrapper">
+      <slot name="action"></slot>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import TitleTop from '@/components/TitleBar/TitleTop.vue'
+import TitleClose from '@/components/TitleBar/TitleClose.vue'
 
 @Component({
-  components: { TitleTop }
+  components: { TitleClose }
 })
 export default class LayoutAdd extends Vue {
   @Prop({ type: String, required: true }) layoutTitle!: string
@@ -33,25 +27,32 @@ export default class LayoutAdd extends Vue {
 
 <style lang="scss" scoped>
 .layout-add {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: $color-lighter;
 
-  header {
+  .title-wrapper {
     padding: 12px $spacing 6px;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     background-color: #fff;
     box-shadow: $box-shadow;
+  }
 
-    .title-wrapper {
-      @extend %flex-center-vertical;
-      justify-content: space-between;
-      margin-bottom: $spacing;
+  .content {
+    flex-grow: 1;
+    padding: $spacing;
+    overflow: hidden scroll;
+  }
 
-      .icon-layout-add {
-        font-size: $font-size-larger;
-      }
-    }
+  .action-wrapper {
+    padding-right: $spacing;
+    padding-left: $spacing;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: #fff;
+    box-shadow: $box-shadow;
   }
 }
 </style>
