@@ -40,13 +40,12 @@ export default class LayoutAdd extends Vue {
   }
 
   .content {
+    padding: 12px $spacing;
     flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing;
     align-content: flex-start;
-    padding: $spacing;
-    overflow: hidden scroll;
   }
 
   .action-wrapper {

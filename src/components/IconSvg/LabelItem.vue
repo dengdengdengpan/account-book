@@ -1,6 +1,6 @@
 <template>
   <div class="label-wrapper">
-    <icon-display v-bind="$attrs"></icon-display>
+    <icon-display v-bind="$attrs" class="icon-label"></icon-display>
     <span class="label">{{ label }}</span>
   </div>
 </template>
@@ -22,7 +22,6 @@ export default class LabelItem extends Vue {
   @extend %flex-center-vertical;
   justify-content: space-between;
   height: 40px;
-  margin-bottom: $spacing;
   padding: 0 3px;
   border-radius: 20px;
   background-color: #fff;
@@ -35,6 +34,17 @@ export default class LabelItem extends Vue {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+
+  &.selected {
+    .icon-label {
+      background-color: $color-highlight;
+      color: #fff;
+    }
+
+    .label {
+      color: $color-highlight;
+    }
   }
 }
 </style>

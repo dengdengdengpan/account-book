@@ -6,7 +6,7 @@
       <button-type-account></button-type-account>
     </template>
     <template #label>
-        <label-item icon="clothing" label="衣服"></label-item>
+        <label-item class="selected" icon="clothing" label="衣服"></label-item>
         <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
         <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
         <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
