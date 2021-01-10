@@ -6,24 +6,14 @@
       <button-type-account></button-type-account>
     </template>
     <template #label>
-      <p>测试1</p>
-      <p>测试2</p>
-      <p>测试3</p>
-      <p>测试4</p>
-      <p>测试5</p>
-      <p>测试6</p>
-      <p>测试7</p>
-      <p>测试8</p>
-      <p>测试9</p>
-      <p>测试10</p>
-      <p>测试11</p>
-      <p>测试12</p>
-      <p>测试13</p>
-      <p>测试14</p>    
+        <label-item icon="clothing" label="衣服"></label-item>
+        <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
+        <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
+        <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
     </template>
     <template #action>
-      <p>测试7</p>
-      <p>测试8</p>
+      <p>操作</p>
+      <p>操作</p>
     </template>
   </layout-add>
 </template>
@@ -32,9 +22,10 @@
 import { Vue, Component } from 'vue-property-decorator'
 import LayoutAdd from '@/components/LayoutPage/LayoutAdd.vue'
 import ButtonTypeAccount from '@/components/AccountModule/ButtonTypeAccount.vue'
+import LabelItem from '@/components/IconSvg/LabelItem.vue'
 
 @Component({
-  components: { LayoutAdd, ButtonTypeAccount }
+  components: { LayoutAdd, ButtonTypeAccount, LabelItem }
 })
 export default class AccountKeep extends Vue {
 

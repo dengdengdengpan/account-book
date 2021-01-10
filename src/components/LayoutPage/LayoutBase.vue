@@ -30,8 +30,7 @@ export default class Layout extends Vue {
 
 <style lang="scss" scoped>
 .layout-base {
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   position: relative;
   height: 100vh;
 

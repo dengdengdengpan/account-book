@@ -1,6 +1,6 @@
 <template>
   <svg class="icon-svg" aria-hidden="true">
-    <use :xlink:href="`#${iconName}`"></use>
+    <use :xlink:href="`#${icon}`"></use>
   </svg>
 </template>
 
@@ -9,7 +9,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component
 export default class IconSvg extends Vue {
-  @Prop({ type: String, required: true }) iconName!: string
+  @Prop({ type: String, required: true }) icon!: string
 }
 </script>
 

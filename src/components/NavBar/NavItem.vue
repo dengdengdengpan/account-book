@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/${to}`" active-class="nav-selected" class="nav-item">
-    <icon-svg :icon-name="icon" class="nav-icon"></icon-svg>
+    <icon-svg :icon="icon" class="nav-icon"></icon-svg>
     <span class="nav-name">{{ name }}</span>
   </router-link>
 </template>

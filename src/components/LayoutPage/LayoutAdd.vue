@@ -27,8 +27,7 @@ export default class LayoutAdd extends Vue {
 
 <style lang="scss" scoped>
 .layout-add {
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   height: 100vh;
   background-color: $color-lighter;
 
@@ -42,6 +41,10 @@ export default class LayoutAdd extends Vue {
 
   .content {
     flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    align-content: flex-start;
     padding: $spacing;
     overflow: hidden scroll;
   }

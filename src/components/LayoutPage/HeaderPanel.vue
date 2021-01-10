@@ -30,8 +30,7 @@ export default class HeaderPanel extends Vue {
 
 <style lang="scss" scoped>
 header {
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   margin-bottom: $spacing;
   padding: $padding;
   border-radius: $border-radius;

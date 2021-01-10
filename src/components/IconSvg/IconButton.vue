@@ -1,6 +1,6 @@
 <template>
   <div class="icon-button-wrapper" @touchstart="$emit('xxx')">
-    <icon-svg :icon-name="icon" class="icon-button"></icon-svg>
+    <icon-svg :icon="icon" class="icon-button"></icon-svg>
   </div>
 </template>
 

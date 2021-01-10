@@ -1,7 +1,7 @@
 <template>
   <header class="title-close">
     <title-top v-bind="$attrs"></title-top>
-    <icon-svg icon-name="close" class="icon-layout-add"></icon-svg>
+    <icon-svg icon="close" class="icon-layout-add"></icon-svg>
   </header>
 </template>
 

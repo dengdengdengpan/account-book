@@ -1,5 +1,5 @@
 <template>
-  <div v-if="iconName" class="icon-display-wrapper">
+  <div class="icon-display-wrapper">
     <icon-svg v-bind="$attrs" class="icon-display"></icon-svg>
   </div>
 </template>

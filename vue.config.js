@@ -19,6 +19,11 @@ module.exports = {
     loaderOptions: {
       scss: {
         prependData: '@import "~@/styles/variable.scss";'
+      },
+      postcss: {
+        'postcss-px-to-viewport': {
+          viewportWidth: 375
+        }
       }
     }
   }
