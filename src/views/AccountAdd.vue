@@ -6,10 +6,7 @@
       <button-type-account></button-type-account>
     </template>
     <template #label>
-        <label-item class="selected" icon="clothing" label="衣服"></label-item>
-        <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
-        <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
-        <label-item icon="clothing" label="吃饭吃饭吃饭吃饭"></label-item>
+        <tag-list :data="tagList"></tag-list>
     </template>
     <template #action>
       <p>操作</p>
@@ -22,13 +19,21 @@
 import { Vue, Component } from 'vue-property-decorator'
 import LayoutAdd from '@/components/LayoutPage/LayoutAdd.vue'
 import ButtonTypeAccount from '@/components/AccountModule/ButtonTypeAccount.vue'
-import LabelItem from '@/components/IconSvg/LabelItem.vue'
+import TagList from '@/components/Tag/TagList.vue'
 
 @Component({
-  components: { LayoutAdd, ButtonTypeAccount, LabelItem }
+  components: { LayoutAdd, ButtonTypeAccount, TagList }
 })
 export default class AccountKeep extends Vue {
-
+  tagList = [
+    { icon: 'clothing', tag: '衣服' },
+    { icon: 'clothing', tag: '吃饭' },
+    { icon: 'clothing', tag: '公交车' },
+    { icon: 'clothing', tag: '地铁' }
+  ]
+  selectLabel (event: Touch) {
+    console.log(event)
+  }
 }
 </script>
 
